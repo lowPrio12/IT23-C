@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #2a9d8f, #264653);
+            position: relative;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 20px;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav .logo img {
+            height: 40px; 
+            margin-right: 20px;
+            border-radius: 100%; 
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1b9e9b;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content {
+            max-width: 400px;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-button {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #1b9e9b;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #0d1e1d;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape1 {
+            width: 300px;
+            height: 300px;
+            background: rgb(248, 248, 248);
+            top: 10%;
+            left: 5%;
+        }
+
+        .shape2 {
+            width: 400px;
+            height: 400px;
+            background: rgb(115, 0, 0);
+            top: 50%;
+            right: 5%;
+        }
+        .shape3 {
+            width: 400px;
+            height: 400px;
+            background: rgb(0, 0, 0);
+            top: 50%;
+            right: 5%;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .footer-content{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: rgb(248, 247, 248);
+            text-align: center;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://i.pinimg.com/originals/03/32/0d/03320d5d2bcc9a44c41e7cd04a94b006.jpg"  alt="Logo" border="0">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Highlight.html">Highlight</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="LogPage.html">Exit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1> Going somewhere?  </h1>
+            <p>Thank you for visiting my webpage portfolio! Click the button below to go to another website. Credits to wave to earth. </p>
+            <p>^ m ^</p>
+            <form id="logoutForm">
+                <button type="submit" class="logout-button">Exit</button>
+            </form>
+            <p id="error-message" style="color: red;"></p>
+        </div>
+    </section>
+    
+    <script>
+        
+        document.getElementById("logoutForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            
+            
+            const youtubeLink = "https://www.youtube.com/watch?v=Q49pnA4jsp8&list=RDQ49pnA4jsp8&start_radio=1";  
+            window.location.href = youtubeLink; 
+        });
+    </script>
+    
+
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Jacob Israel Ranin. All rights reserved.</p>
+        <p>Contact me: <a href="mailto:your.email@example.com">email@gmail.com</a></p>
+        <div class="social-links">
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+            <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+        </div>
+    </div>
+</footer>
+</html>

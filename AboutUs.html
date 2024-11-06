@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #2a9d8f, #264653);
+            position: relative;
+
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 20px;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav .logo img {
+            height: 40px;
+            margin-right: 20px;
+            border-radius: 100%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1b9e9b;
+        }
+
+        .about-section {
+            padding: 60px 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: #10d2e0;
+            margin-bottom: 30px;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .team-section {
+            padding: 40px 20px;
+        }
+
+        .team-section h3 {
+            font-size: 2rem;
+            color: #1b9e9b;
+            margin-bottom: 20px;
+        }
+
+        .team-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            background-color: #2a9d8f;
+            padding: 20px;
+            width: 200px;
+            margin: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid #5e40ae;
+            margin-bottom: 10px;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape1 {
+            width: 200px;
+            height: 200px;
+            background: rgb(0, 0, 0);
+            top: 10%;
+            left: 15%;
+        }
+
+        .shape2 {
+            width: 300px;
+            height: 300px;
+            background: rgba(0, 0, 0, 0.945);
+            top: 30%;
+            right: 10%;
+        }
+        .shape3 {
+            width: 140px;
+            height: 140px;
+            background: rgb(0, 0, 0);
+            top: 70%;
+            right: 20%;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-60px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #1b9e9b;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 30px;
+            margin-top: 30px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://i.pinimg.com/originals/03/32/0d/03320d5d2bcc9a44c41e7cd04a94b006.jpg" alt="Logo" border="0">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Highlight.html">Highlight</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="LogPage.html">Exit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <h2>About Us</h2>
+        <p>We are a dedicated team of web development experts, passionate about creating innovative websites that
+            elevate your business.
+        <p>By combining technical proficiency with a deep understanding of industry trends, we
+            deliver solutions that help you achieve your digital goals.</p>
+
+        <p>Our mission is to empower businesses through the power of well-crafted websites, ensuring you stand out in
+            an increasingly competitive digital landscape. </p>
+        <p>With a focus on integrity, excellence, and collaboration,
+            we aim to build long-term partnerships that foster growth and success for our clients.</p>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="team-list">
+            <div class="team-member">
+                <img src=https://img-comment-fun.9cache.com/media/azE3jXb/aEkVnmJX_700w_0.jpg alt="Team Member 1">
+                <h4>Jacob Israel Ranin</h4>
+                <p>Creator</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+</body>
+
+</html>

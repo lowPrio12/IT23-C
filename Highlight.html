@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #2a9d8f, #264653);
+            position: relative;
+
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 20px;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav .logo img {
+            height: 40px;
+            margin-right: 20px;
+            border-radius: 100%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1b9e9b;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #16605d;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .highlight {
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .highlight h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .highlight p {
+            font-size: 1.2rem;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .projects-section {
+            background-color: #184253;
+            padding: 60px 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .projects-section h2 {
+            text-align: left;
+            font-size: 2.5rem;
+            color: #1b9e9b;
+            margin-bottom: 30px;
+        }
+
+        .services-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            padding: 20px;
+            width: 700px;
+            margin: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.459);
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            background-color: #256ba1;
+        }
+
+        .service-item h3 {
+            font-size: 1.8rem;
+            color: #1b9e9b;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            font-size: 1.2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #1b9e9b;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 30px;
+            margin-top: 30px;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape1 {
+            width: 200px;
+            height: 200px;
+            background: rgb(0, 0, 0);
+            top: 10%;
+            left: 15%;
+        }
+
+        .shape2 {
+            width: 300px;
+            height: 300px;
+            background: rgba(0, 0, 0, 0.945);
+            top: 30%;
+            right: 10%;
+        }
+        .shape3 {
+            width: 140px;
+            height: 140px;
+            background: rgb(0, 0, 0);
+            top: 70%;
+            right: 20%;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-60px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .footer-content{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: rgb(248, 247, 248);
+            text-align: center;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://i.pinimg.com/originals/03/32/0d/03320d5d2bcc9a44c41e7cd04a94b006.jpg"  alt="Logo" border="0">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Highlight.html">Highlight</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="LogPage.html">Exit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Highlight Section -->
+    <section class="highlight">
+        <img src="https://img-comment-fun.9cache.com/media/azE3jXb/aEkVnmJX_700w_0.jpg"
+                alt="Your Name" class="profile-image">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Explore my latest projects, highlights, and achievements. Stay tuned for more updates as I continue to evolve and enhance my skills!</p>
+            
+    </section>
+
+    <section class="projects-section">
+        <h2>My IT projects</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Event Driven Programming</h3>
+                <p>Creating interactive applications that respond to user events seamlessly.</p>
+                <a href="https://lowprio12.github.io/it24c/" class="cta-button">See Project</a>
+            </div>
+            <div class="service-item">
+                <h3>Fundamentals of Programming 2</h3>
+                <p>Enhancing software development skills through advanced programming concepts.</p>
+                <a href="#" class="cta-button">See Project</a>
+            </div>
+            <div class="service-item">
+                <h3>Multimedia</h3>
+                <p>Designing engaging multimedia content for diverse platforms and audiences.</p>
+                <a href="#" class="cta-button">See Project</a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+</body>
+
+
+</html>

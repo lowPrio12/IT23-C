@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #2a9d8f, #264653);
+            position: relative;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 20px;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav .logo img {
+            height: 40px;
+            margin-right: 20px;
+            border-radius: 100%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1b9e9b;
+        }
+
+        .services-section {
+            padding: 60px 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .services-section h2 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+
+        .services-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            background-color: rgba(24, 87, 79, 0.9);
+            padding: 20px;
+            width: 250px;
+            margin: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-item h3 {
+            font-size: 1.8rem;
+            color: #10d2e0;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            font-size: 1.2rem;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape1 {
+            width: 200px;
+            height: 200px;
+            background: rgb(0, 0, 0);
+            top: 10%;
+            left: 15%;
+        }
+
+        .shape2 {
+            width: 300px;
+            height: 300px;
+            background: rgba(0, 0, 0, 0.945);
+            top: 30%;
+            right: 10%;
+        }
+        .shape3 {
+            width: 140px;
+            height: 140px;
+            background: rgb(0, 0, 0);
+            top: 70%;
+            right: 20%;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-60px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .footer-content {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: rgb(248, 247, 248);
+            text-align: center;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://i.pinimg.com/originals/03/32/0d/03320d5d2bcc9a44c41e7cd04a94b006.jpg" alt="Logo"
+                    border="0">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Highlight.html">Highlight</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="LogPage.html">Exit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2>My IT Services</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <p>I create custom, user-friendly websites that bring your ideas to life, from personal portfolios to
+                    interactive projects.</p>
+            </div>
+            <div class="service-item">
+                <h3>Cloud-Based Projects</h3>
+                <p>I explore cloud technologies to enhance collaboration and streamline workflows for students and
+                    academic projects.</p>
+            </div>
+            <div class="service-item">
+                <h3>Cybersecurity</h3>
+                <p>I help secure your digital creations, ensuring your content and online presence are safe from cyber
+                    threats.</p>
+            </div>
+            <div class="service-item">
+                <h3>IT Consulting</h3>
+                <p>I offer guidance to students on optimizing tech tools, improving skills, and preparing for future
+                    careers in IT.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+   
+</body>
+
+</html>
